@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="GoodsFilterV" id="iN0-l3-epB" customClass="GoodsFilterV">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0R-sc-oVB">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <connections>
+                        <action selector="upInside_close:" destination="iN0-l3-epB" eventType="touchUpInside" id="kfq-6Z-UTk"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="irA-1u-6vC">
+                    <rect key="frame" x="54" y="0.0" width="266" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="irA-1u-6vC" secondAttribute="bottom" id="BqM-GE-BO3"/>
+                <constraint firstItem="irA-1u-6vC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="54" id="N9u-KQ-Vm4"/>
+                <constraint firstAttribute="bottom" secondItem="d0R-sc-oVB" secondAttribute="bottom" id="Vs1-oX-gFM"/>
+                <constraint firstItem="d0R-sc-oVB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="XoZ-ID-Pm8"/>
+                <constraint firstItem="d0R-sc-oVB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kP2-51-e1J"/>
+                <constraint firstAttribute="trailing" secondItem="irA-1u-6vC" secondAttribute="trailing" id="qhu-sV-J4Z"/>
+                <constraint firstItem="irA-1u-6vC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qur-uS-Zuf"/>
+                <constraint firstAttribute="trailing" secondItem="d0R-sc-oVB" secondAttribute="trailing" id="vUj-Pk-6mG"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <outlet property="button" destination="d0R-sc-oVB" id="nuy-xU-WEV"/>
+                <outlet property="masterV" destination="irA-1u-6vC" id="iY7-nq-BI9"/>
+            </connections>
+            <point key="canvasLocation" x="195" y="320"/>
+        </view>
+    </objects>
+</document>

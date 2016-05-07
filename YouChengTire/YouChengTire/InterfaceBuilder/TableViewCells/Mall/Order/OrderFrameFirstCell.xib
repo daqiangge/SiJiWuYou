@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="OrderFrameFirstCell" selectionStyle="none" indentationWidth="10" reuseIdentifier="OrderFrameFirstCell" rowHeight="44" id="cRq-h2-NfY" customClass="OrderFrameFirstCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cRq-h2-NfY" id="16s-5A-k3z">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="32E-hy-71U">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mall_order_cell_store" translatesAutoresizingMaskIntoConstraints="NO" id="PTx-Ut-e8T">
+                                <rect key="frame" x="8" y="12" width="24" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Is1-l5-sOh"/>
+                                    <constraint firstAttribute="width" constant="24" id="wSo-Vk-tYX"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="驰耐得官方旗舰店" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ZR-os-Vyi">
+                                <rect key="frame" x="40" y="12" width="176" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="pUu-65-e6H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.19215686269999999" green="0.19215686269999999" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="me_cell_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="5Vm-qT-M41">
+                                <rect key="frame" x="224" y="15" width="8" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="8" id="HdX-sW-6Qv"/>
+                                    <constraint firstAttribute="height" constant="14" id="Lnv-6f-0OD"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="卖家已发货" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fx4-yS-Axa">
+                                <rect key="frame" x="232" y="12" width="80" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="7MN-x6-SFD"/>
+                                    <constraint firstAttribute="width" constant="80" id="DbG-J1-dcq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.93333333330000001" green="0.28235294119999998" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5ZR-os-Vyi" firstAttribute="leading" secondItem="PTx-Ut-e8T" secondAttribute="trailing" constant="8" id="OXz-fH-PDD"/>
+                            <constraint firstItem="5Vm-qT-M41" firstAttribute="leading" secondItem="5ZR-os-Vyi" secondAttribute="trailing" constant="8" id="Poc-hk-eSB"/>
+                            <constraint firstItem="5ZR-os-Vyi" firstAttribute="centerY" secondItem="32E-hy-71U" secondAttribute="centerY" id="RM6-7W-Tn7"/>
+                            <constraint firstAttribute="trailing" secondItem="fx4-yS-Axa" secondAttribute="trailing" constant="8" id="kGi-hU-Lpg"/>
+                            <constraint firstItem="5Vm-qT-M41" firstAttribute="centerY" secondItem="32E-hy-71U" secondAttribute="centerY" id="l46-7f-Jkl"/>
+                            <constraint firstItem="PTx-Ut-e8T" firstAttribute="centerY" secondItem="32E-hy-71U" secondAttribute="centerY" id="nPh-DC-Fax"/>
+                            <constraint firstItem="fx4-yS-Axa" firstAttribute="leading" secondItem="5Vm-qT-M41" secondAttribute="trailing" id="rVL-3e-ICs"/>
+                            <constraint firstItem="fx4-yS-Axa" firstAttribute="centerY" secondItem="32E-hy-71U" secondAttribute="centerY" id="u8D-g7-nuR"/>
+                            <constraint firstItem="PTx-Ut-e8T" firstAttribute="leading" secondItem="32E-hy-71U" secondAttribute="leading" constant="8" id="wKX-6Q-ihP"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="32E-hy-71U" secondAttribute="trailing" id="KCZ-cS-TgJ"/>
+                    <constraint firstItem="32E-hy-71U" firstAttribute="top" secondItem="16s-5A-k3z" secondAttribute="top" id="fLt-E2-peG"/>
+                    <constraint firstItem="32E-hy-71U" firstAttribute="leading" secondItem="16s-5A-k3z" secondAttribute="leading" id="hgV-oE-TQs"/>
+                    <constraint firstAttribute="bottom" secondItem="32E-hy-71U" secondAttribute="bottom" id="v8O-ce-h26"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="belongName" destination="5ZR-os-Vyi" id="tcs-Ay-kQs"/>
+                <outlet property="status" destination="fx4-yS-Axa" id="IKR-x6-e6w"/>
+            </connections>
+            <point key="canvasLocation" x="204" y="143"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="mall_order_cell_store" width="23" height="18"/>
+        <image name="me_cell_arrow" width="9" height="17"/>
+    </resources>
+</document>

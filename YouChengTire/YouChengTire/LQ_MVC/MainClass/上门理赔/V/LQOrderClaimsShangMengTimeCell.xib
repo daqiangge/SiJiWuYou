@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="163" id="KGk-i7-Jjw" customClass="LQOrderClaimsShangMengTimeCell">
+            <rect key="frame" x="0.0" y="0.0" width="512" height="163"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="512" height="162.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-12-12" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAI-5v-eEX">
+                        <rect key="frame" x="347" y="0.0" width="150" height="162.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="BQL-e3-mTq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g88-RQ-jVe">
+                        <rect key="frame" x="0.0" y="161.5" width="512" height="1"/>
+                        <color key="backgroundColor" red="0.85209484349999998" green="0.85209484349999998" blue="0.85209484349999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="pvB-61-UmG"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="预约上门时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s2c-mr-5UH">
+                        <rect key="frame" x="13" y="0.0" width="102" height="162.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="vNj-nP-MFV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="g88-RQ-jVe" secondAttribute="bottom" id="3MM-9T-Iqb"/>
+                    <constraint firstAttribute="trailing" secondItem="g88-RQ-jVe" secondAttribute="trailing" id="4K9-uo-Lg9"/>
+                    <constraint firstItem="s2c-mr-5UH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="8wu-Wo-iKP"/>
+                    <constraint firstItem="s2c-mr-5UH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="AHm-oX-bPY"/>
+                    <constraint firstItem="g88-RQ-jVe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="K20-qL-dZT"/>
+                    <constraint firstAttribute="trailing" secondItem="jAI-5v-eEX" secondAttribute="trailing" constant="15" id="OZY-X3-tf7"/>
+                    <constraint firstItem="jAI-5v-eEX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="onW-LS-igH"/>
+                    <constraint firstAttribute="bottom" secondItem="jAI-5v-eEX" secondAttribute="bottom" id="rma-5A-tsF"/>
+                    <constraint firstAttribute="bottom" secondItem="s2c-mr-5UH" secondAttribute="bottom" id="swv-pK-F6I"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lineView" destination="g88-RQ-jVe" id="r9e-Aq-GWg"/>
+                <outlet property="timeLabel" destination="jAI-5v-eEX" id="qKy-tp-Qyh"/>
+            </connections>
+            <point key="canvasLocation" x="329" y="401.5"/>
+        </tableViewCell>
+    </objects>
+</document>
